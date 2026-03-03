@@ -58,7 +58,7 @@ footer {
 /* **   MAIN */
 
 .titulo-general {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/fondo-mediano.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-mediano.jpg);
     height: 610px;
     width: 100%;
     display: flex;
@@ -600,13 +600,11 @@ footer {
 
 
 /* vista destok */
-/* *INDEX Y LOS CONTACTOS* */
-
 @media (min-width: 1023px) {
     body {
         /* mobile first */
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
 
         grid-template-areas:
@@ -861,21 +859,19 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column; 
+        margin-bottom:2rem;
     }
     .acordion{ 
         width: 70%;
-
     }
-}
 
+    .acordion div button{ 
+        height: 80px;
+        font-size: 1.8rem;
+    }
 
-
-
-
-
-
-
-
-
-
+    .acordion div div{ 
+        font-size:1.8rem;
+    }
 }
