@@ -1,19 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-/* *
-    Colores 
-    naranja: #F16F01; 
-    celeste-azul: #0074CB; 
-    amarillo: #F2C14E;
-    azul-oscuro: #282D4A;
-    blanco: #F2EAE8;
-
-
-    $bg-header:#F16F01; 
+/* VARIBELES DE COLORES */  
+$bg-header:#F16F01; 
 $bg-body:#F2EAE8; 
 $bg-section-branding:#282D4A;
 $bg-section-pasos:#0074CB;
@@ -26,7 +13,14 @@ $bg-hover-buttom:lightgreen;
 $color-text:black;
 $bg-opacity-7:rgba(0, 0, 0, 0.7);
 $bg-opacity-5:rgba(0, 0, 0, 0.5);
-* */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     /* mobile first */
@@ -55,12 +49,12 @@ footer {
 
 /* **   HEADER   */
 .cabezera {
-    background-color: #F16F01;
-    color: black;
+    background-color:$bg-header;
+    color: $color-text;
 }
 
 .cabezera a:hover {
-    background-color: darkorange;
+    background-color: $bg-list-hover;
     border-radius: 10px;
 }
 
@@ -73,14 +67,14 @@ footer {
 /* **   MAIN */
 
 .titulo-general {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-mediano.jpg);
+    background-image: linear-gradient($bg-opacity-5, $bg-opacity-5), url(../img/fondo-mediano.jpg);
     height: 610px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 10px dashed #F16F01;
-    border-bottom: 10px dashed #F2EAE8;
+    border-top: 10px dashed $bg-header;
+    border-bottom: 10px dashed $bg-body;
     ;
 }
 
@@ -92,14 +86,14 @@ footer {
 
 .titulo-general h1 {
     font-size: 4rem;
-    color: #F2EAE8;
+    color: $bg-body;
 }
 
 .cuerpo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F2EAE8;
+    background-color: $bg-body;
 }
 
 
@@ -129,7 +123,7 @@ footer {
 .texto-descrip::before {
     content: '';
     display: block;
-    background-color: #F16F01;
+    background-color: $bg-header;
     width: 5px;
     height: 130px;
     position: absolute;
@@ -150,12 +144,12 @@ footer {
     width: 100%;
     height: 400px;
     object-fit: fill;
-    border: 2.5px solid lightgray;
+    border: 2.5px solid $bg-border;
     border-radius: 10%;
 }
 
 .boton-carrusel {
-    background-color: black;
+    background-color: $color-text;
 }
 
 .ultimos-ingresos h2 {
@@ -180,7 +174,7 @@ footer {
 
 .caja-cards div {
     margin: 1.5rem 1rem;
-    background-color: lightgray;
+    background-color: $bg-border;
     max-width: 250px;
     border-radius: 10%;
 }
@@ -196,7 +190,7 @@ footer {
     object-fit: cover;
     width: 100%;
     height: auto;
-    border: 3px solid lightgray;
+    border: 3px solid $bg-border;
     border-radius: 10%;
 }
 
@@ -219,7 +213,7 @@ footer {
 /* branding  */
 
 .branding {
-    background-color: #282D4A;
+    background-color: $bg-section-branding;
     padding: 2.5rem;
     font-style: italic;
     width: 100%;
@@ -228,15 +222,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 10px dashed #0074CB;
-    border-top: 10px dashed #F2EAE8;
+    border-bottom: 10px dashed $bg-header;
+    border-top: 10px dashed $bg-body;
 }
 
 .branding h2 {
     font-size: 2rem;
     text-align: center;
     padding-bottom: 2rem;
-    color: #F2EAE8;
+    color: $bg-body;
 }
 
 /* pasas de compra*/
@@ -244,9 +238,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0074CB;
+    background-color: $bg-section-pasos;
     width: 100%;
-    border-bottom: 10px dashed #F16F01;
+    border-bottom: 10px dashed $bg-header;
 }
 
 .pasos ul li {
@@ -257,8 +251,8 @@ footer {
 
 
 .pasos li h2 {
-    color: #0074CB;
-    background-color: #F2C14E;
+    color: $bg-section-pasos;
+    background-color: $bg-list-li;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -270,14 +264,14 @@ footer {
 
 .pasos li p {
     font-size: 1.5rem;
-    color: #F2EAE8;
+    color: $bg-body;
 }
 
 .pasos>h2 {
     text-align: center;
     padding-top: 5rem;
     font-size: 2.5rem;
-    color: #F2EAE8;
+    color: $bg-body;
 }
 
 .pasos:last-child {
@@ -294,7 +288,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #F16F01;
+    background-color: $bg-header;
 }
 
 .pie-de-pagina h2 {
@@ -302,13 +296,13 @@ footer {
 }
 
 .pie-de-pagina a {
-    color: black;
+    color: $color-text;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
 .pie-de-pagina a:hover {
-    background-color: darkorange;
+    background-color: $bg-list-hover;
     border-radius: 10px;
 }
 
@@ -360,10 +354,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2C14E;
+    background-color: $bg-list-li;
     width: 100%;
-    border-bottom: 10px dashed #F16F01;
-    border-top: 10px dashed #F16F01;
+    border-bottom: 10px dashed $bg-header;
+    border-top: 10px dashed $bg-header;
 }
 
 .formulario {
@@ -372,8 +366,8 @@ footer {
     gap: 1.5rem;
     max-width: 600px;
     margin: 2rem;
-    background-color: #0074CB;
-    border: 10px dashed #F2C14E;
+    background-color: $bg-list-li;
+    border: 10px dashed $bg-header;
     margin: 5rem 1.5rem;
 }
 
@@ -381,7 +375,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 2.5rem;
-    color: white;
+    color: $bg-body;
 }
 
 .formulario div {
@@ -390,7 +384,7 @@ footer {
 
 .formulario div label {
     font-size: 1rem;
-    color: black;
+    color: $color-text;
 }
 
 .formulario .boton {
@@ -400,37 +394,37 @@ footer {
 }
 
 .formulario button {
-    background-color: green;
-    color: white;
+    background-color: $bg-buttom;
+    color: $bg-body;
     margin-bottom: 2rem;
     font-size: 1.8rem;
     width: 150px;
     border-radius: 5px;
-    border: 8px dashed darkgreen
+    border: 8px dashed $bg-border-buttom;
 }
 
 .formulario button:hover {
-    background-color: lightgreen;
-    border: 8px dashed green;
-    color: white;
+    background-color: $bg-hover-buttom;
+    border: 8px dashed $bg-buttom;
+    color: $bg-body;
 }
 
 /* *sobre nosotros* */
 
 .cuerpo-sobre-nosotros {
-    background-color: #F2C14E;
-    color: white;
-    border-top: 10px dashed #F16F01;
-    border-bottom: 10px dashed #F16F01;
+    background-color: $bg-list-li;
+    color: $bg-body;
+    border-top: 10px dashed $bg-header;
+    border-bottom: 10px dashed $bg-header;
 }
 
 .secciones {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: #0074CB;
+    background-color: $bg-section-pasos;
     margin: 2.5rem;
-    border: 10px dashed #F2C14E;
+    border: 10px dashed $bg-list-li;
 }
 
 .quienes-somos {
@@ -476,24 +470,24 @@ footer {
 }
 
 .accordion div h2 button {
-    background-color: #0074CB;
-    color: white;
+    background-color: $bg-section-pasos;
+    color: $bg-body;
 }
 
 .accordion div,
 .accordion strong {
-    color: white;
+    color: $bg-body;
 }
 
 .acordion div {
-    background-color: #0074CB;
-    border: #0074CB;
+    background-color: $bg-section-pasos;
+    border: $bg-section-pasos;
 }
 
 
 /* *productos* */
 .tecnologia-fondo h2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo-tecnologia.jpg);
+    background-image: linear-gradient($bg-opacity-7, $bg-opacity-7), url(/img/fondo-tecnologia.jpg);
     height: 400px;
     width: 100%;
     display: flex;
@@ -502,12 +496,12 @@ footer {
     position: relative;
     top: -1.5rem;
     object-fit: fill;
-    border-top: 10px dashed #F16F01;
-    border-bottom: 10px dashed #282D4A;
+    border-top: 10px dashed $bg-header;
+    border-bottom: 10px dashed $bg-section-branding;
 }
 
 .ropa-fondo h2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/fondo-ropa.jpg);
+    background-image: linear-gradient($bg-opacity-5 , $bg-opacity-5), url(/img/fondo-ropa.jpg);
     height: 400px;
     width: 100%;
     display: flex;
@@ -516,15 +510,15 @@ footer {
     position: relative;
     top: -1.5rem;
     object-fit: fill;
-    border-top: 10px dashed #F16F01;
-    border-bottom: 10px dashed #0074CB;
+    border-top: 10px dashed $bg-header;
+    border-bottom: 10px dashed $bg-section-pasos;
 }
 
 .titulo-productos h2 {
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
-    color: #F2EAE8;
+    color: $bg-body;
 }
 
 .titulo-productos {
@@ -539,19 +533,19 @@ footer {
 }
 
 .tecnologia-main {
-    background-color: #282D4A;
+    background-color: $bg-section-branding;
     height: 100%;
     width: 100%;
     margin-bottom: 3rem;
-    border-bottom: 10px dashed #F16F01;
+    border-bottom: 10px dashed $bg-header;
 }
 
 .ropa-main {
-    background-color: #0074CB;
+    background-color: $bg-section-pasos;
     height: 100%;
     width: 100%;
     margin-bottom: 3rem;
-    border-bottom: 10px dashed #F16F01;
+    border-bottom: 10px dashed $bg-header;
 }
 
 
@@ -562,15 +556,15 @@ footer {
 .item-caja>div {
     margin: 5rem 2rem;
     border-radius: 10px;
-    background-color: lightgrey;
+    background-color: $bg-border;
 }
 
 .tecno-caja {
-    border: 3px solid #282D4A;
+    border: 3px solid $bg-section-branding;
 }
 
 .ropa-caja {
-    border: 3px solid #0074CB;
+    border: 3px solid $bg-section-pasos;
 }
 
 .item-caja div div {
@@ -581,7 +575,7 @@ footer {
     width: 100%;
     height: 300px;
     border-radius: 8px;
-    background-color: white;
+    background-color: $bg-body;
 }
 
 .item-caja div h5 {
@@ -589,7 +583,7 @@ footer {
 }
 
 .item-caja div p {
-    color: black;
+    color: $color-text;
     font-size: 1rem;
 }
 
@@ -602,13 +596,13 @@ footer {
 }
 
 .item-caja div button {
-    color: #F2EAE8;
+    color: $bg-body;
     font-weight: bold;
-    background-color: green;
+    background-color: $bg-buttom;
     width: 90px;
     height: 50px;
     border-radius: 10px;
-    border: 3px solid darkgreen;
+    border: 3px solid $bg-border-buttom;
     margin: 0.5rem 0;
 }
 
@@ -645,7 +639,7 @@ footer {
     .texto-descrip::before {
         content: '';
         display: block;
-        background-color: #F16F01;
+        background-color: $bg-header;
         width: 7px;
         height: 140px;
         position: absolute;
@@ -657,9 +651,9 @@ footer {
         width: 100%;
         height: 500px;
         object-fit: fill;
-        border: 2.5px solid lightgray;
+        border: 2.5px solid $bg-border;
         border-radius: 10%;
-        background-color: white;
+        background-color: $bg-body;
     }
 
     .ofertas-agotar-stock h2 {
@@ -685,7 +679,7 @@ footer {
         object-fit: cover;
         width: 100%;
         height: 50%;
-        border: 3px solid lightgray;
+        border: 3px solid $bg-border;
         border-radius: 9%;
     }
 
@@ -717,8 +711,8 @@ footer {
 
 
     .pasos li h2 {
-        color: #0074CB;
-        background-color: #F2C14E;
+        color: $bg-section-pasos;
+        background-color: $bg-list-li;
         border-radius: 100%;
         width: 50px;
         height: 50px;
@@ -726,12 +720,12 @@ footer {
         justify-content: center;
         align-items: center;
         margin-right: 1rem;
-        margin-bottom: 1rem;-
+        margin-bottom: 1rem;
     }
 
     .pasos li p {
         font-size: 2.5rem;
-        color: #F2EAE8;
+        color: $bg-body;
     }
 
     .pasos li {
@@ -784,7 +778,7 @@ footer {
         width: 100%;
         height: 300px;
         border-radius: 8px;
-        background-color: white;
+        background-color: $bg-body;
     }
 
     .item-caja div button {
@@ -902,9 +896,9 @@ footer {
         width: 100%;
         height: 600px;
         object-fit: fill;
-        border: 2.5px solid lightgray;
+        border: 2.5px solid $bg-border;
         border-radius: 10%;
-        background-color: white;
+        background-color: $bg-body;
     }
 
     .texto-descrip h2 {
@@ -918,7 +912,7 @@ footer {
     .texto-descrip::before {
         content: '';
         display: block;
-        background-color: #F16F01;
+        background-color: $bg-header;
         width: 7px;
         height: 225px;
         position: absolute;
@@ -951,7 +945,7 @@ footer {
         object-fit: cover;
         width: 100%;
         height: 50%;
-        border: 3px solid lightgray;
+        border: 3px solid $bg-border;
         border-radius: 9%;
     }
 
@@ -981,7 +975,7 @@ footer {
         font-size: 3rem;
         text-align: center;
         padding-bottom: 3rem;
-        color: #F2EAE8;
+        color: $bg-body;
     }
 
     /* pasos a serguir */
@@ -996,8 +990,8 @@ footer {
 
 
     .pasos li h2 {
-        color: #0074CB;
-        background-color: #F2C14E;
+        color: $bg-section-pasos;
+        background-color: $bg-list-li;
         border-radius: 100%;
         width: 50px;
         height: 50px;
@@ -1009,7 +1003,7 @@ footer {
 
     .pasos li p {
         font-size: 2.5rem;
-        color: #F2EAE8;
+        color: $bg-body;
     }
 
     .pasos li {
@@ -1036,7 +1030,7 @@ footer {
     }
 
     .pie-de-pagina a {
-        color: black;
+        color: $color-text;
         text-decoration: none;
         font-size: 1.8rem;
     }
@@ -1085,7 +1079,7 @@ footer {
         width: 100%;
         height: 400px;
         border-radius: 8px;
-        background-color: white;
+        background-color: $bg-body;
     }
 
     .item-caja div button {

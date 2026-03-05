@@ -1,28 +1,16 @@
+/* VARIBELES DE COLORES */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* *
-    Colores 
-    naranja: #F16F01; 
-    celeste-azul: #0074CB; 
-    amarillo: #F2C14E;
-    azul-oscuro: #282D4A;
-    blanco: #F2EAE8;
-* */
-
 body {
     /* mobile first */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+    grid-template-areas: "header" "main" "footer";
 }
 
 header {
@@ -36,7 +24,6 @@ main {
 footer {
     grid-area: footer;
 }
-
 
 /* **   HEADER   */
 .cabezera {
@@ -54,9 +41,7 @@ footer {
     height: 50px;
 }
 
-
 /* **   MAIN */
-
 .titulo-general {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-mediano.jpg);
     height: 610px;
@@ -66,7 +51,6 @@ footer {
     align-items: center;
     border-top: 10px dashed #F16F01;
     border-bottom: 10px dashed #F2EAE8;
-    ;
 }
 
 .titulo-general img {
@@ -86,7 +70,6 @@ footer {
     align-items: center;
     background-color: #F2EAE8;
 }
-
 
 /* ultimos ingresos */
 .ultimos-ingresos {
@@ -112,7 +95,7 @@ footer {
 }
 
 .texto-descrip::before {
-    content: '';
+    content: "";
     display: block;
     background-color: #F16F01;
     width: 5px;
@@ -149,7 +132,6 @@ footer {
     padding: 2rem;
 }
 
-
 /* ofertas hasta agotar stock */
 .ofertas-agotar-stock h2 {
     font-size: 2.5rem;
@@ -176,7 +158,6 @@ footer {
     border-radius: 10%;
 }
 
-
 .caja-cards div img {
     object-fit: cover;
     width: 100%;
@@ -184,7 +165,6 @@ footer {
     border: 3px solid lightgray;
     border-radius: 10%;
 }
-
 
 .texto-desc h5 {
     font-size: 1.5rem;
@@ -202,7 +182,6 @@ footer {
 }
 
 /* branding  */
-
 .branding {
     background-color: #282D4A;
     padding: 2.5rem;
@@ -213,7 +192,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 10px dashed #0074CB;
+    border-bottom: 10px dashed #F16F01;
     border-top: 10px dashed #F2EAE8;
 }
 
@@ -239,7 +218,6 @@ footer {
     align-items: center;
     margin-top: 2rem;
 }
-
 
 .pasos li h2 {
     color: #0074CB;
@@ -269,12 +247,7 @@ footer {
     padding-bottom: 3rem;
 }
 
-
-
-
-
 /* ** FOOTER */
-
 .pie-de-pagina {
     display: flex;
     flex-direction: column;
@@ -339,7 +312,6 @@ footer {
     opacity: 0.5;
 }
 
-
 /** formulario contacto* */
 .cuerpo-contacto {
     display: flex;
@@ -357,8 +329,8 @@ footer {
     gap: 1.5rem;
     max-width: 600px;
     margin: 2rem;
-    background-color: #0074CB;
-    border: 10px dashed #F2C14E;
+    background-color: #F2C14E;
+    border: 10px dashed #F16F01;
     margin: 5rem 1.5rem;
 }
 
@@ -366,7 +338,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 2.5rem;
-    color: white;
+    color: #F2EAE8;
 }
 
 .formulario div {
@@ -386,25 +358,24 @@ footer {
 
 .formulario button {
     background-color: green;
-    color: white;
+    color: #F2EAE8;
     margin-bottom: 2rem;
     font-size: 1.8rem;
     width: 150px;
     border-radius: 5px;
-    border: 8px dashed darkgreen
+    border: 8px dashed darkgreen;
 }
 
 .formulario button:hover {
     background-color: lightgreen;
     border: 8px dashed green;
-    color: white;
+    color: #F2EAE8;
 }
 
 /* *sobre nosotros* */
-
 .cuerpo-sobre-nosotros {
     background-color: #F2C14E;
-    color: white;
+    color: #F2EAE8;
     border-top: 10px dashed #F16F01;
     border-bottom: 10px dashed #F16F01;
 }
@@ -438,7 +409,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .video-muestra h2 {
@@ -462,19 +432,18 @@ footer {
 
 .accordion div h2 button {
     background-color: #0074CB;
-    color: white;
+    color: #F2EAE8;
 }
 
 .accordion div,
 .accordion strong {
-    color: white;
+    color: #F2EAE8;
 }
 
 .acordion div {
     background-color: #0074CB;
     border: #0074CB;
 }
-
 
 /* *productos* */
 .tecnologia-fondo h2 {
@@ -539,7 +508,6 @@ footer {
     border-bottom: 10px dashed #F16F01;
 }
 
-
 .item-caja {
     margin-bottom: 5rem;
 }
@@ -547,7 +515,7 @@ footer {
 .item-caja>div {
     margin: 5rem 2rem;
     border-radius: 10px;
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 
 .tecno-caja {
@@ -566,7 +534,7 @@ footer {
     width: 100%;
     height: 300px;
     border-radius: 8px;
-    background-color: white;
+    background-color: #F2EAE8;
 }
 
 .item-caja div h5 {
@@ -598,21 +566,12 @@ footer {
 }
 
 /* vista tablet */
-@media 
-
-
-/* vista destok */
-@media (min-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     body {
-        /* mobile first */
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
-
-        grid-template-areas:
-            "header header header"
-            "main main main"
-            "footer footer footer";
+        grid-template-areas: "header header" "main main" "footer footer";
     }
 
     header {
@@ -628,46 +587,29 @@ footer {
     }
 
     .cabezera nav img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .ultimos-ingresos {
-        flex-direction: row-reverse;
-        justify-content: center;
-        max-width: 1200px;
-    }
-
-
-    .img-container div img {
-        width: 100%;
-        height: 600px;
-        object-fit: fill;
-        border: 2.5px solid lightgray;
-        border-radius: 10%;
-        background-color: white;
-    }
-
-    .texto-descrip h2 {
-        font-size: 3rem;
-    }
-
-    .texto-descrip h3 {
-        font-size: 2.5rem;
+        width: 60px;
+        height: 60px;
     }
 
     .texto-descrip::before {
-        content: '';
+        content: "";
         display: block;
         background-color: #F16F01;
         width: 7px;
-        height: 225px;
+        height: 140px;
         position: absolute;
         top: 2.7rem;
         left: 0.5rem;
     }
 
-    /* ofertas */
+    .img-container div img {
+        width: 100%;
+        height: 500px;
+        object-fit: fill;
+        border: 2.5px solid lightgray;
+        border-radius: 10%;
+        background-color: #F2EAE8;
+    }
 
     .ofertas-agotar-stock h2 {
         font-size: 4rem;
@@ -696,6 +638,253 @@ footer {
         border-radius: 9%;
     }
 
+    .texto-desc h5 {
+        font-size: 1.5rem;
+    }
+
+    .texto-desc p {
+        font-size: 1.5rem;
+    }
+
+    .texto-desc a {
+        font-size: 1.25rem;
+        padding: 1rem;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .branding {
+        height: 500px;
+    }
+
+    .pasos ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .pasos li h2 {
+        color: #0074CB;
+        background-color: #F2C14E;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .pasos li p {
+        font-size: 2.5rem;
+        color: #F2EAE8;
+    }
+
+    .pasos li {
+        margin-right: 5rem;
+    }
+
+    .pasos>h2 {
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+    .pasos:last-child {
+        padding-bottom: 3rem;
+    }
+
+    .tecnologia-fondo h2,
+    .ropa-fondo h2 {
+        height: 600px;
+        font-size: 3rem;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .item-caja {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item-caja div {
+        max-width: 100px;
+        flex: 1 1 300px;
+    }
+
+    .item-caja div div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-caja div div img {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        background-color: #F2EAE8;
+    }
+
+    .item-caja div button {
+        margin-top: auto;
+        margin-left: 25%;
+        width: 150px;
+        height: 50px;
+    }
+
+    /* contacto */
+    .formulario {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .formulario h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    /* sobre nosotros */
+    .cuerpo-sobre-nosotros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secciones {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .secciones section h2 {
+        font-size: 3rem;
+    }
+
+    .quienes-somos p {
+        font-size: 1.25rem;
+        line-height: 1.8;
+    }
+
+    .video-muestra iframe {
+        width: 70%;
+        height: 400px;
+    }
+
+    .preguntas-frecuentes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .acordion {
+        width: 70%;
+    }
+
+    .acordion div button {
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    .acordion div div {
+        font-size: 1.8rem;
+    }
+}
+
+/* vista destok */
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .cabezera nav img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ultimos-ingresos {
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .img-container div img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        border: 2.5px solid lightgray;
+        border-radius: 10%;
+        background-color: #F2EAE8;
+    }
+
+    .texto-descrip h2 {
+        font-size: 3rem;
+    }
+
+    .texto-descrip h3 {
+        font-size: 2.5rem;
+    }
+
+    .texto-descrip::before {
+        content: "";
+        display: block;
+        background-color: #F16F01;
+        width: 7px;
+        height: 225px;
+        position: absolute;
+        top: 2.7rem;
+        left: 0.5rem;
+    }
+
+    /* ofertas */
+    .ofertas-agotar-stock h2 {
+        font-size: 4rem;
+    }
+
+    .ofertas-agotar-stock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .caja-cards div img {
+        object-fit: cover;
+        width: 100%;
+        height: 50%;
+        border: 3px solid lightgray;
+        border-radius: 9%;
+    }
 
     .texto-desc h5 {
         font-size: 2rem;
@@ -713,7 +902,6 @@ footer {
     }
 
     /* branding */
-
     .branding {
         height: 500px;
     }
@@ -726,15 +914,12 @@ footer {
     }
 
     /* pasos a serguir */
-
-
     .pasos ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-top: 3rem;
     }
-
 
     .pasos li h2 {
         color: #0074CB;
@@ -787,8 +972,6 @@ footer {
         font-size: 1rem;
     }
 
-
-
     /* productos */
     .tecnologia-fondo h2,
     .ropa-fondo h2 {
@@ -819,14 +1002,13 @@ footer {
         display: flex;
         flex-direction: column;
         flex: 1;
-
     }
 
     .item-caja div div img {
         width: 100%;
         height: 400px;
         border-radius: 8px;
-        background-color: white;
+        background-color: #F2EAE8;
     }
 
     .item-caja div button {
@@ -847,9 +1029,7 @@ footer {
         margin-top: 2rem;
     }
 
-
     /* sobre nosotros */
-
     .cuerpo-sobre-nosotros {
         display: flex;
         justify-content: center;
@@ -897,3 +1077,4 @@ footer {
     }
 }
 
+/*# sourceMappingURL=style.css.map */
