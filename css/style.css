@@ -597,6 +597,8 @@ footer {
     margin: 0.5rem 0;
 }
 
+/* vista tablet */
+@media 
 
 
 /* vista destok */
@@ -633,7 +635,7 @@ footer {
     .ultimos-ingresos {
         flex-direction: row-reverse;
         justify-content: center;
-        max-width: 1100px;
+        max-width: 1200px;
     }
 
 
@@ -711,6 +713,11 @@ footer {
     }
 
     /* branding */
+
+    .branding {
+        height: 500px;
+    }
+
     .branding h2 {
         font-size: 3rem;
         text-align: center;
@@ -789,11 +796,18 @@ footer {
         font-size: 4rem;
     }
 
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
     .item-caja {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .item-caja div {
@@ -804,7 +818,7 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex:1;
+        flex: 1;
 
     }
 
@@ -814,64 +828,72 @@ footer {
         border-radius: 8px;
         background-color: white;
     }
-    .item-caja div button{ 
+
+    .item-caja div button {
         margin-top: auto;
         margin-left: 25%;
         width: 150px;
         height: 50px;
     }
+
     /* contacto */
-    .formulario{
+    .formulario {
         max-width: 800px;
         width: 100%;
     }
-    .formulario h2{ 
+
+    .formulario h2 {
         font-size: 3rem;
+        margin-top: 2rem;
     }
 
 
     /* sobre nosotros */
 
-    .cuerpo-sobre-nosotros{ 
-        display:flex; 
+    .cuerpo-sobre-nosotros {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-    .secciones{ 
-        max-width:80%; 
-        width: 100%; 
+
+    .secciones {
+        max-width: 80%;
+        width: 100%;
     }
 
     .secciones section h2 {
         font-size: 3rem;
     }
 
-    .quienes-somos p{
-        font-size: 1.5rem;
+    .quienes-somos p {
+        font-size: 1.8rem;
         line-height: 1.8;
     }
 
-    .video-muestra iframe{
-        width:70%;
+    .video-muestra iframe {
+        width: 70%;
         height: 400px;
     }
-    .preguntas-frecuentes{ 
+
+    .preguntas-frecuentes {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; 
-        margin-bottom:2rem;
+        flex-direction: column;
+        margin-bottom: 2rem;
     }
-    .acordion{ 
+
+    .acordion {
         width: 70%;
     }
 
-    .acordion div button{ 
+    .acordion div button {
         height: 80px;
         font-size: 1.8rem;
     }
 
-    .acordion div div{ 
-        font-size:1.8rem;
+    .acordion div div {
+        font-size: 1.8rem;
     }
 }
+
