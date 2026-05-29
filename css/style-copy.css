@@ -191,7 +191,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 10px dashed #F16F01;
   border-top: 10px dashed #F2EAE8;
 }
 
@@ -209,6 +208,7 @@ footer {
   align-items: center;
   background-color: #0074CB;
   width: 100%;
+  border-top: 10px dashed #282D4A; 
   border-bottom: 10px dashed #F16F01;
 }
 
