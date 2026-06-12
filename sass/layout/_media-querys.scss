@@ -1,0 +1,489 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixin';
+
+// TABLET
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header" "main main" "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .cabezera nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .texto-descrip::before {
+        content: "";
+        display: block;
+        background-color: $bg-color-main-fondo;
+        width: 7px;
+        height: 140px;
+        position: absolute;
+        top: 2.7rem;
+        left: 0.5rem;
+    }
+
+    .img-container div img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        border: 2.5px solid $bg-color-cards;
+        border-radius: 10%;
+        background-color: $ft-color-main;
+    }
+
+
+    // ofertas
+    .ofertas-agotar-stock{ 
+        @include mixin.flex($justificado:center, $alineado: center, $direccion: column);
+    }
+
+    .caja-cards{ 
+        @include mixin.flex($alineado: center, $justificado: center);
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .caja-cards .card{ 
+       flex:0 0 50%;
+       height: auto;
+    }
+
+    .caja-cards .card img{ 
+        object-fit: contain;
+        width: 100%;
+        height: 2%;
+    }
+
+    .texto-desc h5 {
+        font-size: 1.5rem;
+    }
+
+    .texto-desc p {
+        font-size: 1.5rem;
+    }
+
+    .texto-desc a {
+        font-size: 1.25rem;
+        padding: 1rem;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .branding {
+        height: 500px;
+    }
+
+    .pasos ul {
+        @include mixin.flex($direccion: column);
+        margin-top: 3rem;
+    }
+
+    .pasos li h2 {
+        color: $bg-color-pasos;
+        background-color: $bg-color-items-pasos;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        @include mixin.flex($justificado: center, $alineado:center);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .pasos li p {
+        font-size: 2.5rem;
+        color: $ft-color-main;
+    }
+
+    .pasos li {
+        margin-right: 5rem;
+    }
+
+    .pasos>h2 {
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+    .pasos:last-child {
+        padding-bottom: 3rem;
+    }
+
+    .tecnologia-fondo h2,
+    .ropa-fondo h2 {
+        height: 600px;
+        font-size: 3rem;
+    }
+
+    .desc {
+        @include mixin.flex($direccion: column, $justificado: space-between);
+        margin-bottom: 1rem;
+    }
+
+    .item-caja {
+        @include mixin.flex($justificado:space-between);
+        flex-wrap: wrap;
+    }
+
+    .item-caja div {
+        max-width: 100px;
+        flex: 1 1 300px;
+    }
+
+    .item-caja div div {
+        width: 100%;
+        @include mixin.flex($direccion: column);
+    }
+
+    .item-caja div div img {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        background-color: $ft-color-main;
+    }
+
+    .item-caja div button {
+        margin-top: auto;
+        margin-left: 25%;
+        width: 150px;
+        height: 50px;
+    }
+
+    /* contacto */
+     .formulario {
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+        max-width: 70%;
+        width:100%;
+    }
+    .formulario h2 {
+        font-size: 3rem;
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    /* sobre nosotros */
+    .cuerpo-sobre-nosotros {
+        @include mixin.flex($justificado: center, $alineado: center);
+    }
+
+    .secciones {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .secciones section h2 {
+        font-size: 3rem;
+    }
+
+    .quienes-somos p {
+        font-size: 1.25rem;
+        line-height: 1.8;
+    }
+
+    .video-muestra iframe {
+        width: 70%;
+        height: 400px;
+    }
+
+    .preguntas-frecuentes {
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .acordion {
+        width: 70%;
+    }
+
+    .acordion div button {
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    .acordion div div {
+        font-size: 1.8rem;
+    }
+}
+
+// DESTOK
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .cabezera nav img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ultimos-ingresos {
+        @include mixin.flex($direccion: row-reverse);
+        max-width: 1200px;
+    }
+
+    .img-container div img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        border: 2.5px solid $bg-color-cards;
+        border-radius: 10%;
+        background-color: $bg-color-neutro;
+    }
+
+    .texto-descrip h2 {
+        font-size: 3rem;
+    }
+
+    .texto-descrip h3 {
+        font-size: 2.5rem;
+    }
+
+    .texto-descrip::before {
+        content: "";
+        display: block;
+        background-color: $bg-color-main-fondo;
+        width: 7px;
+        height: 225px;
+        position: absolute;
+        top: 2.7rem;
+        left: 0.5rem;
+    }
+
+    /* ofertas */
+    .ofertas-agotar-stock h2 {
+        font-size: 4rem;
+    }
+
+    .ofertas-agotar-stock {
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+        flex-wrap: wrap;
+    }
+
+    .caja-cards {
+        @include mixin.flex($justificado: center);
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+
+    .caja-cards div img {
+        object-fit:contain;
+        width: 100%;
+        height: 200px;
+        border: 3px solid $bg-color-cards;
+        border-radius: 20%;
+        background-color:$bg-color-neutro;
+    }
+
+    .texto-desc h5 {
+        font-size: 2rem;
+    }
+
+    .texto-desc p {
+        font-size: 1.5rem;
+    }
+
+    .texto-desc a {
+        font-size: 1.25rem;
+        padding: 1rem;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    /* branding */
+    .branding {
+        height: 500px;
+    }
+
+    .branding h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        color: $ft-color-main;
+    }
+
+    /* pasos a serguir */
+    .pasos ul {
+        @include mixin.flex($alineado: center);
+        margin-top: 3rem;
+    }
+
+    .pasos li h2 {
+        color: $bg-color-pasos;
+        background-color: $bg-color-items-pasos;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        @include mixin.flex($justificado: center, $alineado: center);
+        margin-right: 1rem;
+    }
+
+    .pasos li p {
+        font-size: 2.5rem;
+        color: $ft-color-main;
+    }
+
+    .pasos li {
+        margin-right: 5rem;
+    }
+
+    .pasos>h2 {
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+    .pasos:last-child {
+        padding-bottom: 3rem;
+    }
+
+    /* footer */
+    .pie-de-pagina {
+        @include mixin.flex($justificado: space-between);
+    }
+
+    .pie-de-pagina h2 {
+        font-size: 2rem;
+    }
+
+    .pie-de-pagina a {
+        color: $ft-color-segundario;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+
+    .derechos p {
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+
+    /* productos */
+    .tecnologia-fondo h2,
+    .ropa-fondo h2 {
+        height: 600px;
+        font-size: 4rem;
+    }
+
+    .desc {
+        @include mixin.flex($justificado:space-between, $direccion: column);
+        margin-bottom: 1rem;
+    }
+
+    .item-caja {
+        @include mixin.flex($justificado:space-between);
+        flex-wrap: wrap;
+        
+    }
+
+    .item-caja div {
+        max-width: 500px;
+    }
+
+    .item-caja div div {
+        width: 100%;
+        @include mixin.flex($direccion: column);
+        flex: 1;
+    }
+
+    .item-caja div div img {
+        width: 100%;
+        height: 400px;
+        border-radius: 8px;
+        background-color: $ft-color-main;
+    }
+
+    .item-caja div button {
+        margin-top: auto;
+        margin-left: 25%;
+        width: 150px;
+        height: 50px;
+    }
+
+    /* contacto */
+    .formulario {
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+        max-width: 50%;
+        width:100%;
+    }
+    .formulario div{
+        width: 80%;
+    }
+
+    .formulario h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    /* sobre nosotros */
+
+    .cuerpo-sobre-nosotros{ 
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+    }
+    .secciones {
+        max-width: 70%;
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+    }
+
+    .secciones section h2 {
+        font-size: 3rem;
+    }
+
+    .quienes-somos > p{
+        font-size: 2rem;
+        line-height: 2;
+    }
+    
+
+    .video-muestra iframe{
+        width: 800px;
+        height: 600px;
+    }
+
+    .preguntas-frecuentes {
+        @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+        margin-bottom: 2rem;
+    }
+
+    .acordion {
+        width: 70%;
+    }
+
+    .acordion div button {
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    .acordion div div {
+        font-size: 1.8rem;
+    }
+}
+

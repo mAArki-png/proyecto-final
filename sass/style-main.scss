@@ -1,0 +1,41 @@
+
+@use 'utilities/variables' as *;
+@use 'utilities/mixin';
+
+@use 'base/reset';
+
+
+@use 'layout/grid';
+@use 'layout/header';
+
+// index principal 
+@use 'layout/main-index';
+@use 'components/ultimos-ingresos';
+@use 'components/ofertas';
+@use 'components/branding';
+@use 'components/pasos-compra';
+
+
+// contacto
+@use 'components/formulario';
+@use 'components/boton-formulario'; 
+
+
+// sobre nosotros 
+@use 'layout/nosotros'; 
+
+// productos de la pagina 
+@use 'layout/productos'; 
+@use 'components/boton-productos';
+
+
+@use 'layout/footer'; 
+
+
+@use 'layout/media-querys';
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

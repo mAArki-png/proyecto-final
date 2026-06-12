@@ -1,0 +1,42 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixin';
+
+
+.pasos {
+    background-color: $bg-color-pasos;
+    width: 100%;
+    border-top: 10px dashed $bg-color-branding;
+    border-bottom: 10px dashed $bg-color-main-fondo;
+    @include mixin.flex($justificado: center, $alineado: center, $direccion:column);
+}
+
+.pasos ul li {
+    margin-top: 2rem;
+    @include mixin.flex($justificado: flex-start, $alineado: center, $direccion: row);
+}
+
+.pasos li h2 {
+    color: $bg-color-pasos;
+    background-color: $bg-color-items-pasos;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    @include mixin.flex($justificado: center, $alineado: center);
+    margin-right: 1rem;
+}
+
+.pasos li p {
+    font-size: 1.5rem;
+    color: $ft-color-main;
+}
+
+.pasos>h2 {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    color: $ft-color-main;
+}
+
+.pasos:last-child {
+    padding-bottom: 3rem;
+}

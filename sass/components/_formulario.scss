@@ -1,0 +1,37 @@
+@use '../utilities/variables' as *; 
+@use '../utilities/mixin'; 
+
+
+.cuerpo-contacto {
+    @include mixin.flex($justificado: center, $alineado: center);
+    background-color: $bg-color-items-pasos;
+    width: 100%;
+    border-bottom: 10px dashed $bg-color-main-fondo;
+    border-top: 10px dashed $bg-color-main-fondo;
+}
+
+.formulario {
+    @include mixin.flex($direccion: column);
+    gap: 1.5rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem;
+    background-color: $bg-color-main-fondo;
+    border: 10px dashed $bg-color-items-pasos;
+    margin: 5rem 1.5rem;
+}
+.formulario div, .formulario h2{
+    width: 80%;
+    margin: 1rem 2rem;
+}
+
+.formulario h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $ft-color-main;
+}
+
+.formulario div label {
+    font-size: 1rem;
+    color: $ft-color-segundario;
+}

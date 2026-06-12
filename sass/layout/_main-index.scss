@@ -1,0 +1,30 @@
+@use '../utilities/variables' as *; 
+@use '../utilities/mixin';
+
+
+/* **   MAIN */
+.titulo-general {
+    background-image: linear-gradient($bg-color-fade, $bg-color-fade), url(../img/fondo-mediano.jpg);
+    height: 610px;
+    width: 100%;
+    @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+    border-top: 10px dashed $bg-color-main-fondo;
+    border-bottom: 10px dashed $ft-color-main;
+}
+
+.titulo-general img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.titulo-general h1 {
+    font-size: 4rem;
+    color: $ft-color-main;
+}
+
+.cuerpo {
+    @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+    background-color: $ft-color-main;
+}
+

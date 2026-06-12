@@ -1,0 +1,49 @@
+@use '../utilities/variables' as *; 
+@use '../utilities/mixin';
+
+/* ofertas hasta agotar stock */
+.ofertas-agotar-stock h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.ofertas-agotar-stock {
+    @include mixin.flex($justificado: center, $alineado: center, $direccion: column);
+}
+
+.caja-cards div {
+    margin: 1.5rem 1rem;
+    background-color: $bg-color-cards;
+    max-width: 250px;
+    border-radius: 10%;
+}
+
+.caja-cards>div {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.caja-cards div img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border: 3px solid $bg-color-cards;
+    border-radius: 10%;
+}
+
+.texto-desc h5 {
+    font-size: 1.5rem;
+}
+
+.texto-desc p {
+    font-size: 1rem;
+}
+
+.texto-desc a {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+}

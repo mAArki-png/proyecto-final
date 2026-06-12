@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *; 
+@use '../utilities/mixin' ;
+
+.formulario .boton {
+    @include mixin.flex($justificado: center, $alineado: center);
+}
+
+.formulario button {
+    background-color: $bg-color-main-boton;
+    color: $ft-color-main;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    height: 60pxs;
+    width: 150px;
+}
+
+.formulario button:hover {
+    background-color: $bg-color-segundario-boton;
+    font-weight: bold;
+    color:$ft-color-segundario;
+}

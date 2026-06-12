@@ -1,0 +1,7 @@
+// mixin de flexbos para centrar elementos
+@mixin flex($justificado:flex-start, $alineado:flex-start, $direccion:row) {
+    display: flex;
+    justify-content: $justificado;
+    align-items: $alineado;
+    flex-direction: $direccion;
+}

@@ -31,7 +31,7 @@ footer {
 }
 
 .cabezera a:hover {
-  background-color: darkorange;
+  background-color: lightsalmon;
   border-radius: 10px;
 }
 
@@ -48,6 +48,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-top: 10px dashed #F16F01;
   border-bottom: 10px dashed #F2EAE8;
 }
@@ -65,17 +66,18 @@ footer {
 
 .cuerpo {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #F2EAE8;
 }
 
-/* ultimos ingresos */
 .ultimos-ingresos {
   max-width: 600px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   margin: 5rem 0;
 }
@@ -83,8 +85,9 @@ footer {
 .ultimos-ingresos .texto-descrip {
   text-align: left;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
   position: relative;
 }
 
@@ -140,8 +143,9 @@ footer {
 
 .ofertas-agotar-stock {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .caja-cards div {
@@ -188,11 +192,11 @@ footer {
   width: 100%;
   height: 300px;
   margin-top: 2rem;
+  border-top: 10px dashed #F2EAE8;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 10px dashed #F16F01;
-  border-top: 10px dashed #F2EAE8;
+  flex-direction: column;
 }
 
 .branding h2 {
@@ -202,20 +206,23 @@ footer {
   color: #F2EAE8;
 }
 
-/* pasas de compra*/
 .pasos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #0074CB;
   width: 100%;
+  border-top: 10px dashed #282D4A;
   border-bottom: 10px dashed #F16F01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pasos ul li {
-  display: flex;
-  align-items: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 
 .pasos li h2 {
@@ -227,6 +234,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-right: 1rem;
 }
 
@@ -246,76 +254,11 @@ footer {
   padding-bottom: 3rem;
 }
 
-/* ** FOOTER */
-.pie-de-pagina {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #F16F01;
-}
-
-.pie-de-pagina h2 {
-  font-size: 2rem;
-}
-
-.pie-de-pagina a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.pie-de-pagina a:hover {
-  background-color: darkorange;
-  border-radius: 10px;
-}
-
-.redes-sociales ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.redes-sociales h2 {
-  padding-left: 1rem;
-  padding-top: 2rem;
-}
-
-.redes-sociales ul li {
-  display: flex;
-  align-items: center;
-}
-
-.redes-sociales img {
-  width: 30px;
-  height: auto;
-  margin-right: 0.8rem;
-}
-
-.trabaja-con-nosotros {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.trabaja-con-nosotros h2 {
-  padding-top: 1rem;
-}
-
-.derechos {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
-  opacity: 0.5;
-}
-
-/** formulario contacto* */
 .cuerpo-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   background-color: #F2C14E;
   width: 100%;
   border-bottom: 10px dashed #F16F01;
@@ -324,24 +267,27 @@ footer {
 
 .formulario {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 1.5rem;
   max-width: 600px;
+  width: 100%;
   margin: 2rem;
   background-color: #F16F01;
   border: 10px dashed #F2C14E;
   margin: 5rem 1.5rem;
 }
 
-.formulario h2 {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 2.5rem;
-  color: #F2EAE8;
+.formulario div, .formulario h2 {
+  width: 80%;
+  margin: 1rem 2rem;
 }
 
-.formulario div {
-  margin: 1.5rem;
+.formulario h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #F2EAE8;
 }
 
 .formulario div label {
@@ -353,6 +299,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .formulario button {
@@ -360,18 +307,16 @@ footer {
   color: #F2EAE8;
   margin-bottom: 2rem;
   font-size: 1.8rem;
+  height: 60pxs;
   width: 150px;
-  border-radius: 5px;
-  border: 8px dashed dark green;
 }
 
 .formulario button:hover {
-  background-color: light green;
-  border: 8px dashed green;
-  color: #F2EAE8;
+  background-color: lightgreen;
+  font-weight: bold;
+  color: black;
 }
 
-/* *sobre nosotros* */
 .cuerpo-sobre-nosotros {
   background-color: #F2C14E;
   color: #F2EAE8;
@@ -381,6 +326,8 @@ footer {
 
 .secciones {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
   background-color: #0074CB;
@@ -406,8 +353,9 @@ footer {
 
 .video-muestra {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
 }
 
 .video-muestra h2 {
@@ -417,16 +365,19 @@ footer {
 }
 
 .video-muestra iframe {
-  width: 310px;
+  width: 280px;
   height: 200px;
   margin-bottom: 3rem 2rem;
   border-radius: 10px;
 }
 
-.titulo-section-preguntas-frecuentes {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 2rem;
+.preguntas-frecuentes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .accordion div h2 button {
@@ -439,12 +390,11 @@ footer {
   color: #F2EAE8;
 }
 
-.acordion div {
+.accordion div {
   background-color: #0074CB;
   border: #0074CB;
 }
 
-/* *productos* */
 .tecnologia-fondo h2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo-tecnologia.jpg);
   height: 400px;
@@ -452,6 +402,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   position: relative;
   top: -1.5rem;
   object-fit: fill;
@@ -466,6 +417,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   position: relative;
   top: -1.5rem;
   object-fit: fill;
@@ -486,9 +438,9 @@ footer {
 
 .caja-productos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .tecnologia-main {
@@ -555,16 +507,92 @@ footer {
 
 .item-caja div button {
   color: #F2EAE8;
-  font-weight: bold;
   background-color: green;
-  width: 90px;
-  height: 50px;
+  width: 200px;
+  height: 70px;
   border-radius: 10px;
   border: 3px solid dark green;
-  margin: 0.5rem 0;
+  font-size: 2rem;
+  margin: 20px 17.5%;
 }
 
-/* vista tablet */
+.item-caja div button:hover {
+  background-color: lightgreen;
+  color: black;
+  font-weight: bold;
+}
+
+.pie-de-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #F16F01;
+}
+
+.pie-de-pagina h2 {
+  font-size: 2rem;
+}
+
+.pie-de-pagina a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.pie-de-pagina a:hover {
+  background-color: darkorange;
+  border-radius: 10px;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.redes-sociales h2 {
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+.redes-sociales ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: auto;
+  margin-right: 0.8rem;
+}
+
+.trabaja-con-nosotros {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.trabaja-con-nosotros h2 {
+  padding-top: 1rem;
+}
+
+.derechos {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     display: grid;
@@ -597,34 +625,34 @@ footer {
   }
   .img-container div img {
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: fill;
     border: 2.5px solid lightgray;
     border-radius: 10%;
     background-color: #F2EAE8;
   }
-  .ofertas-agotar-stock h2 {
-    font-size: 4rem;
-  }
   .ofertas-agotar-stock {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .caja-cards {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
   }
-  .caja-cards div img {
-    object-fit: cover;
+  .caja-cards .card {
+    flex: 0 0 50%;
+    height: auto;
+  }
+  .caja-cards .card img {
+    object-fit: contain;
     width: 100%;
-    height: 50%;
-    border: 3px solid lightgray;
-    border-radius: 9%;
+    height: 2%;
   }
   .texto-desc h5 {
     font-size: 1.5rem;
@@ -643,6 +671,8 @@ footer {
   }
   .pasos ul {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     margin-top: 3rem;
   }
@@ -655,6 +685,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
@@ -679,15 +710,17 @@ footer {
   }
   .desc {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 1rem;
   }
   .item-caja {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .item-caja div {
     max-width: 100px;
@@ -696,6 +729,8 @@ footer {
   .item-caja div div {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
   }
   .item-caja div div img {
@@ -712,18 +747,24 @@ footer {
   }
   /* contacto */
   .formulario {
-    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
     width: 100%;
   }
   .formulario h2 {
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    text-align: center;
   }
   /* sobre nosotros */
   .cuerpo-sobre-nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
   .secciones {
     max-width: 80%;
@@ -746,6 +787,7 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
+    width: 100%;
   }
   .acordion {
     width: 70%;
@@ -758,7 +800,6 @@ footer {
     font-size: 1.8rem;
   }
 }
-/* vista destok */
 @media (min-width: 1024px) {
   body {
     display: grid;
@@ -780,8 +821,10 @@ footer {
     height: 90px;
   }
   .ultimos-ingresos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row-reverse;
-    justify-content: center;
     max-width: 1200px;
   }
   .img-container div img {
@@ -790,7 +833,7 @@ footer {
     object-fit: fill;
     border: 2.5px solid lightgray;
     border-radius: 10%;
-    background-color: #F2EAE8;
+    background-color: white;
   }
   .texto-descrip h2 {
     font-size: 3rem;
@@ -814,23 +857,27 @@ footer {
   }
   .ofertas-agotar-stock {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .caja-cards {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 3rem;
   }
   .caja-cards div img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    height: 50%;
+    height: 200px;
     border: 3px solid lightgray;
-    border-radius: 9%;
+    border-radius: 20%;
+    background-color: white;
   }
   .texto-desc h5 {
     font-size: 2rem;
@@ -857,8 +904,9 @@ footer {
   /* pasos a serguir */
   .pasos ul {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
     margin-top: 3rem;
   }
   .pasos li h2 {
@@ -870,6 +918,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-right: 1rem;
   }
   .pasos li p {
@@ -889,6 +938,8 @@ footer {
   /* footer */
   .pie-de-pagina {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: row;
   }
   .pie-de-pagina h2 {
@@ -911,15 +962,17 @@ footer {
   }
   .desc {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 1rem;
   }
   .item-caja {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .item-caja div {
     max-width: 500px;
@@ -927,6 +980,8 @@ footer {
   .item-caja div div {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     flex: 1;
   }
@@ -944,8 +999,15 @@ footer {
   }
   /* contacto */
   .formulario {
-    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
     width: 100%;
+  }
+  .formulario div {
+    width: 80%;
   }
   .formulario h2 {
     font-size: 3rem;
@@ -956,21 +1018,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .secciones {
-    max-width: 80%;
-    width: 100%;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .secciones section h2 {
     font-size: 3rem;
   }
-  .quienes-somos p {
-    font-size: 1.8rem;
-    line-height: 1.8;
+  .quienes-somos > p {
+    font-size: 2rem;
+    line-height: 2;
   }
   .video-muestra iframe {
-    width: 70%;
-    height: 400px;
+    width: 800px;
+    height: 600px;
   }
   .preguntas-frecuentes {
     display: flex;
@@ -990,5 +1056,6 @@ footer {
     font-size: 1.8rem;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */

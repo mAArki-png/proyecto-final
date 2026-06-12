@@ -1,0 +1,18 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixin'; 
+
+.item-caja div button {
+    color: $ft-color-main;
+    background-color: $bg-color-main-boton;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    border: 3px solid dark $bg-color-main-boton;
+    font-size:2rem;
+    margin:20px 17.5%;
+}
+.item-caja div button:hover{
+    background-color: $bg-color-segundario-boton;
+    color:$ft-color-segundario;
+    font-weight: bold;
+}
